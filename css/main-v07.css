@@ -40,24 +40,27 @@ animation:landingpagehintONE 4s;
 @keyframes landingpagehintONE
 {
 0%   {color: #C0C0C0;}
-25%   {color: #E03D17;}
-50%   {color: #C0C0C0;}
+40%   {color: #C0C0C0;}
+55%   {color: #E03D17;}
+70% {color: #C0C0C0;}
 100% {color: #C0C0C0;}
 }
 
 @-moz-keyframes landingpagehintONE /* Firefox */
 {
 0%   {color: #C0C0C0;}
-25%   {color: #E03D17;}
-50%   {color: #C0C0C0;}
+40%   {color: #C0C0C0;}
+55%   {color: #E03D17;}
+70% {color: #C0C0C0;}
 100% {color: #C0C0C0;}
 }
 
 @-webkit-keyframes landingpagehintONE /* Safari and Chrome */
 {
 0%   {color: #C0C0C0;}
-25%   {color: #E03D17;}
-50%   {color: #C0C0C0;}
+40%   {color: #C0C0C0;}
+55%   {color: #E03D17;}
+70% {color: #C0C0C0;}
 100% {color: #C0C0C0;}
 }
 
@@ -72,24 +75,24 @@ animation:landingpagehintTWO 4s;
 @keyframes landingpagehintTWO
 {
 0%   {color: #C0C0C0;}
-50%   {color: #C0C0C0;}
-75%   {color: #E03D17;}
+70%   {color: #C0C0C0;}
+85%   {color: #E03D17;}
 100% {color: #C0C0C0;}
 }
 
 @-moz-keyframes landingpagehintTWO /* Firefox */
 {
 0%   {color: #C0C0C0;}
-50%   {color: #C0C0C0;}
-75%   {color: #E03D17;}
+70%   {color: #C0C0C0;}
+85%   {color: #E03D17;}
 100% {color: #C0C0C0;}
 }
 
 @-webkit-keyframes landingpagehintTWO /* Safari and Chrome */
 {
 0%   {color: #C0C0C0;}
-50%   {color: #C0C0C0;}
-75%   {color: #E03D17;}
+70%   {color: #C0C0C0;}
+85%   {color: #E03D17;}
 100% {color: #C0C0C0;}
 }
 
