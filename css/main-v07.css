@@ -14,6 +14,7 @@ body {
   margin-bottom: 60px; /* Margin bottom by footer height */
   min-width: 100%;
   font-family: 'Lato', sans-serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.6;
   /*padding-top: 50px;*/ /*to offset for sticky nav*/
@@ -28,6 +29,33 @@ a:hover {
 
 
 /********** CSS3 ANIMATIONS **********/
+
+.logo
+{
+position:absolute;
+top: -10%;
+animation:logoimagedrop 2s;
+-moz-animation:logoimagedrop 2s; /* Firefox */
+-webkit-animation:logoimagedrop 2s; /* Safari and Chrome */
+}
+
+@keyframes logoimagedrop
+{
+0%   {top:-10%;}
+100% {top:45%;}
+}
+
+@-moz-keyframes logoimagedrop /* Firefox */
+{
+0%   {top:-10%;}
+100% {top:45%;}
+}
+
+@-webkit-keyframes logoimagedrop /* Safari and Chrome */
+{
+0%   {top:-10%;}
+100% {top:45%;}
+}
 
 .landing-page-hint-1
 {
