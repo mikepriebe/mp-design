@@ -1,0 +1,127 @@
+/**
+ * Primary styles
+ *
+ * Author: Mike Priebe, with thanks to Bootstrap
+ */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: #F2F2F2;
+  background: url(../images/strong-character.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #F2F2F2;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  min-width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  /*padding-top: 50px;*/ /*to offset for sticky nav*/
+}
+a {
+  color: #C0C0C0;
+}
+a:hover {
+  /*color: #919191;*/
+  color: #E03D17;
+}
+h1, .h1 {
+  color: #D9AF21;
+  font-size: 49px;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+h2, .h2 {
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+/********** CSS3 ANIMATIONS **********/
+
+
+
+/********** CONTENT **********/
+
+.hero-banner {
+  margin-top: 5%;
+}
+p {
+  letter-spacing: 1px;
+  margin: 0;
+}
+.p-italic {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 7px;
+  color: #eee;
+}
+
+
+
+/********** FOOTER **********/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  background-color: rgba(192, 192, 192, .3);
+  color: #222;
+}
+.footer-navigation {
+  display: inline-block;
+  height: 60px;
+}
+.navigation-left-side {
+  float: left;
+  width: 42%;
+  text-align: center;
+}
+.navigation-menu {
+  float: left;
+  width: 16%;
+}
+.navigation-right-side {
+  float: right;
+  width: 42%;
+  text-align: center;
+}
+.footer-button {
+  color: inherit;
+  background-color: transparent;
+  height: 100%;
+  border-radius: 0;
+  border-style: none;
+  border: 1px solid #bbb;
+}
+.btn-lg, .btn-group-lg>.btn {
+  padding: 16px;
+}
+
+
+/********** BROWSER FIXES **********/
+
+::-moz-selection{
+  background:#E05317;
+  color:#F1F1F1;
+  text-shadow: none;
+}
+::selection {
+  background:#E05317;
+  color:#F1F1F1;
+  text-shadow: none;
+}
+/* Firefox will add, for accessibility purposes, a small dotted border on a focused button, override native style below */
+button::-moz-focus-inner { }
+
+
+
