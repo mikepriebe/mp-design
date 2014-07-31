@@ -10,7 +10,7 @@ html {
 }
 body {
   background: #F2F2F2;
-  background: url(../images/design-process.jpg) no-repeat center center fixed;
+  background: url(../images/design-portfolio.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.6;
+  /*line-height: 1.6;*/
   /*padding-top: 50px;*/ /*to offset for sticky nav*/
 }
 a {
@@ -32,7 +32,7 @@ a:hover {
   color: #E03D17;
 }
 h1, .h1 {
-  color: #3DCC60;
+  color: #E03D17;
   font-size: 49px;
   font-weight: 900;
   margin: 0;
@@ -41,10 +41,27 @@ h1, .h1 {
 h2, .h2 {
   letter-spacing: 2px;
   margin: 0;
+  margin-top: 6px;
 }
 
 
-/********** CSS3 ANIMATIONS **********/
+/********** BUTTON **********/
+
+.btn-primary {
+  background-color: transparent;
+  /*border-color: #E03D17;*/
+  border-radius: 0;
+  border-style: none;
+  border: 2px solid #bbb;
+  margin-top: 30px;
+  min-width: 180px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: transparent;
+  border: 2px solid #E03D17;
+  color: #E03D17;
+  outline-color: #E03D17;
+}
 
 
 
@@ -110,6 +127,15 @@ p {
 
 /********** BROWSER FIXES **********/
 
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+input:focus {
+    outline:none;
+    box-shadow:none
+}
+
 ::-moz-selection{
   background:#E05317;
   color:#F1F1F1;
@@ -121,7 +147,9 @@ p {
   text-shadow: none;
 }
 /* Firefox will add, for accessibility purposes, a small dotted border on a focused button, override native style below */
-button::-moz-focus-inner { }
+button::-moz-focus-inner {
+  border-color: #E03D17;
+}
 
 
 

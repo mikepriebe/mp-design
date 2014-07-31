@@ -10,6 +10,11 @@ html {
 }
 body {
   background: #F2F2F2;
+  background: url(../images/mp-design-home.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #C0C0C0;
   margin-bottom: 60px; /* Margin bottom by footer height */
   min-width: 100%;
@@ -29,33 +34,6 @@ a:hover {
 
 
 /********** CSS3 ANIMATIONS **********/
-
-.logo
-{
-position:absolute;
-top: -10%;
-animation:logoimagedrop 2s;
--moz-animation:logoimagedrop 2s; /* Firefox */
--webkit-animation:logoimagedrop 2s; /* Safari and Chrome */
-}
-
-@keyframes logoimagedrop
-{
-0%   {top:-10%;}
-100% {top:45%;}
-}
-
-@-moz-keyframes logoimagedrop /* Firefox */
-{
-0%   {top:-10%;}
-100% {top:45%;}
-}
-
-@-webkit-keyframes logoimagedrop /* Safari and Chrome */
-{
-0%   {top:-10%;}
-100% {top:45%;}
-}
 
 .landing-page-hint-1
 {

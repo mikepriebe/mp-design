@@ -10,7 +10,7 @@ html {
 }
 body {
   background: #F2F2F2;
-  background: url(../images/design-process.jpg) no-repeat center center fixed;
+  background: url(../images/thank-you.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.6;
+  /*line-height: 1.6;*/
   /*padding-top: 50px;*/ /*to offset for sticky nav*/
 }
 a {
@@ -32,7 +32,7 @@ a:hover {
   color: #E03D17;
 }
 h1, .h1 {
-  color: #3DCC60;
+  color: #FFF;
   font-size: 49px;
   font-weight: 900;
   margin: 0;
@@ -40,7 +40,7 @@ h1, .h1 {
 }
 h2, .h2 {
   letter-spacing: 2px;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 
@@ -55,7 +55,7 @@ h2, .h2 {
 }
 p {
   letter-spacing: 1px;
-  margin: 0;
+  /*margin: 0;*/
 }
 .p-italic {
   font-size: 12px;
@@ -63,6 +63,10 @@ p {
   font-style: italic;
   letter-spacing: 7px;
   color: #eee;
+  margin: 0;
+}
+.p-max-width {
+  max-width: 480px;
 }
 
 

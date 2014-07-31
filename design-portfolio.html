@@ -22,7 +22,8 @@
     <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
     <!-- Custom Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/design-process.css" rel="stylesheet">
+    <link href="css/design-portfolio.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
     <!-- <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/osp-din" rel="stylesheet" type="text/css"/> -->
     <!-- Icons -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -42,15 +43,60 @@
   <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 hero-banner">
-          <p class="p-italic">executing</p>
-          <h1>Design Process</h1>
-          <h2>Observation &amp; Research</h2>
-          <h2>Creation &amp; Iteration</h2>
-          <h2>Delivery &amp; Evaluation</h2>
-          <p>Each design path is unique and unpredictable</p>
+          <p class="p-italic">showcasing</p>
+          <h1>Design Portfolio</h1>
+          <h2>Graphic Design</h2>
+          <p>Photoshop &#43; Illustrator &#43; InDesign</p>
+          <h2>Web Developer</h2>
+          <p>HTML5 &#43; CSS3 &#43; jQuery &#43; JavaScript &#43; Bootstrap &#43; SASS</p>
         </div><!--/.col-md-10 -->
       </div><!--/.row -->
-  </div><!--/.container-fluid -->
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+
+
+
+
+          <a href="http://distilleryimage6.ak.instagram.com/ba70b8e8030011e3a31b22000a1fbb63_7.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="People walking down stairs" class="btn btn-primary"><!-- <i class="fa fa-eye fa-lg"></i>  -->View Some Work
+                    
+                </a>
+                <a href="http://distilleryimage3.ak.instagram.com/f0c3343c046511e393b222000aa8011b_7.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Man getting wet">
+                    
+                </a>
+                <a href="http://distilleryimage5.ak.instagram.com/59e9419c05d111e3896922000a1fbe1a_7.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Someone lost their dress">
+                    
+                </a>
+                <a href="http://distilleryimage2.ak.instagram.com/e3493b0a045411e3a4fb22000a1f97ec_7.jpg" data-toggle="lightbox" data-gallery="multiimages" data-footer="Big ass waterfall- using footer instead of title">
+                   
+                </a>
+                <a href="http://distilleryimage10.ak.instagram.com/85c5d0e4039411e3bd9b22000aa82186_7.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="Cool bottle" data-footer="Now fill it with whiskey">
+                    
+                </a>
+                <a href="http://distilleryimage3.ak.instagram.com/aa7088e6048c11e3a32722000aa800c4_7.jpg" data-toggle="lightbox">
+                    
+                </a>
+
+          
+
+
+            </div><!--/.col-md-10 -->
+          </div><!--/.row -->      
+      </div><!--/.container-fluid -->
+
+          
+
+
+          <!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">View Some Work</button>
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                ...
+              </div>
+            </div>
+          </div> -->
+
   
 
 <!-- Sticky Footer -->
@@ -58,7 +104,7 @@
   <div class="footer">
 
       <div class="footer-navigation navigation-left-side">
-        <a class="btn-lg btn-default btn-block footer-button" href="design-philosophy.html" role="button"><i class="fa fa-angle-left fa-lg"></i></a>
+        <a class="btn-lg btn-default btn-block footer-button" href="strong-character.html" role="button"><i class="fa fa-angle-left fa-lg"></i></a>
         <!-- <button type="button" class="btn-lg btn-default btn-block footer-button"><i class="fa fa-angle-left fa-lg"></i></button> -->
       </div>
       <div class="footer-navigation navigation-menu">
@@ -100,12 +146,11 @@
 
       </div>
       <div class="footer-navigation navigation-right-side">
-        <a class="btn-lg btn-default btn-block footer-button" href="strong-character.html" role="button"><i class="fa fa-angle-right fa-lg"></i></a>
+        <a class="btn-lg btn-default btn-block footer-button" href="contact-mike.html" role="button"><i class="fa fa-angle-right fa-lg"></i></a>
         <!-- <button type="button" class="btn-lg btn-default btn-block footer-button"><i class="fa fa-angle-right fa-lg"></i></button> -->
       </div>
 
   </div><!--/.footer -->
-
 
   <!-- /////////////// End Page Content /////////////// -->
 
@@ -116,6 +161,38 @@
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+ <!--  LIGHTBOX -->
+  <script src="//rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.js"></script>
+  <!-- the above remote js file link also exists locally via the file link below if the remote link is ever broken -->
+  <!-- <script src="js/ekko-lightbox.js"></script> -->
+  <script type="text/javascript">
+        $(document).ready(function ($) {
+
+            // delegate calls to data-toggle="lightbox"
+            $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+                event.preventDefault();
+                return $(this).ekkoLightbox({
+                    onShown: function() {
+                        if (window.console) {
+                            return console.log('Checking our the events huh?');
+                        }
+                    }
+                });
+            });
+
+            //Programatically call
+            $('#open-image').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            $('#open-youtube').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        });
+    </script>
+  
 
   <!--Google Analytics-->
   <script type="text/javascript">
@@ -132,17 +209,6 @@
     })();
 
   </script>
-
-
-</body>
-</html>.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 
 
 </body>
